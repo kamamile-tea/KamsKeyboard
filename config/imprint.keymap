@@ -83,7 +83,7 @@
     input-processors =
         <&zip_temp_layer 3 2000>,
         // this gets it to the default installation orientation,
-        <&zip_xy_scaler 1 5>;
+        <&zip_xy_scaler 1 4>;
 };
 
 //left hand trackball configuration
