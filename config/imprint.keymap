@@ -7,6 +7,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    chosen { zmk,matrix-transform = &imprint_function_row;
+    };
     keymap {
         compatible = "zmk,keymap";
 
