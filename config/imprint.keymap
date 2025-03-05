@@ -18,7 +18,7 @@
  &kp LCTRL  &kp A     &kp S     &kp D     &kp F   &kp G                                          &kp H       &kp J      &kp K     &kp L    &kp SEMI &kp SQT
  &kp LSHFT  &kp Z     &kp X     &kp C     &kp V   &kp B                                          &kp N       &kp M      &kp COMMA &kp DOT  &kp FSLH &kp RALT
                       &kp DOWN  &kp UP                                                                                &kp LEFT  &kp RIGHT
-                                                  &kp LC(C)  &kp LC(P)  &kp LBKT       &kp RBKT  &kp BSPC  &kp ENTER
+                                                  &kp LC(C)  &kp LC(V)  &kp LBKT       &kp RBKT  &kp BSPC  &kp ENTER
                                                   &kp LC(X)  &kp ESC  &kp CAPS     &kp LC(MINUS)  &kp LC(LS(MINUS))  &kp SPACE
             >;
         };
