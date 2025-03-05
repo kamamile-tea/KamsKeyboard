@@ -89,7 +89,7 @@
 
 &trackball_central_listener {
     input-processors =
-        <&zip_temp_layer Auto_Mouse_Layer 0500>,
+        <&zip_temp_layer "Auto_Mouse_Layer" 0500>,
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
         <&zip_xy_scaler 1 4>,
         // make this trackball output scrolling events by default instead of cursor movement,
