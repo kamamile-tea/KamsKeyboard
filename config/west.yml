@@ -13,7 +13,7 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboards
       remote: Cyboard-DigitalTailor
-      revision: v0.2
+      revision: main
       import: config/west.yml
   self:
     path: config
