@@ -23,15 +23,15 @@
             >;
         };
 
-// W = &bt BT_DISC 0 = disconnect from the work
-// P = &bt BT_DISC 1 = disconnect from the personal
+//W = &bt BT_DISC 0 = disconnect from the work
+//P = &bt BT_DISC 1 = disconnect from the personal
         Stars_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                     &trans  &trans  &trans  &trans  &bt BT_SEL 0  &trans
- &trans  &trans  &bt BT_DISC 0   &trans  &trans  &trans                                     &trans  &trans  &trans  &rgb_ug RGB_TOG  &bt BT_DISC 0   &trans
+ &trans  &trans  &bt BT_DISC 0   &trans  &trans  &trans                                     &trans  &trans  &trans  &rgb_ug RGB_TOG  &bt BT_DISC 1   &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &bt BT_DISC 0                                    &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans
                  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                                     &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
                                          &trans  &trans &kp CAPS        &kp LC(MINUS) &kp LC(LS(MINUS)) &trans
                                          &trans  &trans &trans        &trans &trans &trans
@@ -50,7 +50,7 @@
                                       &trans  &trans &trans       &trans  &trans &trans
             >;
         };
-// This map is currently unreachable. I am just putting key bindings I want to use in the future here.
+//This map is currently unreachable. I am just putting key bindings I want to use in the future here.
         Keyboard_Control_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
