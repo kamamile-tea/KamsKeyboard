@@ -13,23 +13,25 @@
         default_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
- &kp MINUS    &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6      &kp N7     &kp N8    &kp N9   &kp N0   &kp EQUAL
- &kp TAB    &kp Q     &kp W     &kp E     &kp R   &kp T                                          &kp Y       &kp U      &kp I     &kp O    &kp P    &kp BSPC
- &kp LSHFT  &kp A     &kp S     &kp D     &kp F   &kp G                                          &kp H       &kp J      &kp K     &kp L    &kp SEMI &kp ENTER
- &kp LCTRL  &kp Z     &kp X     &kp C     &kp V   &kp B                                          &kp N       &kp M      &kp COMMA &kp DOT  &kp FSLH &kp RALT
+ &kp ESC    &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6      &kp N7     &kp N8    &kp N9   &kp N0   &kp EQUAL
+ &kp LBKT    &kp Q     &kp W     &kp E     &kp R   &kp T                                          &kp Y       &kp U      &kp I     &kp O    &kp P    &kp RBKT
+ &kp LSHFT  &kp A     &kp S     &kp D     &kp F   &kp G                                          &kp H       &kp J      &kp K     &kp L    &kp SQT &kp BSLH
+ &kp LCTRL  &kp Z     &kp X     &kp C     &kp V   &kp B                                          &kp N       &kp M      &kp COMMA &kp DOT  &kp FSLH &kp ENTER
                       &kp DOWN  &kp UP                                                                                &kp LEFT  &kp RIGHT
-                                                  &kp LC(C)  &mo 1  &kp LC(V)       &kp LC(Z)  &kp SQT  &kp LC(Y)
-                                                  &kp LC(X)  &kp ESC  &kp LBKT     &kp RBKT  &kp BSLH  &kp SPACE
+                                                  &kp LC(C)  &mo 1  &kp LC(V)       &kp LC(Z)  &kp RALT  &kp LC(Y)
+                                                  &kp LC(X)  &kp TAB  &kp MINUS     &kp SEMI  &kp BSPC  &kp SPACE
             >;
         };
 
+// W = &bt BT_DISC 0 = disconnect from the work
+// P = &bt BT_DISC 1 = disconnect from the personal
         Stars_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &rgb_ug RGB_TOG  &trans  &trans
+ &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                     &trans  &trans  &trans  &trans  &bt BT_SEL 0  &trans
+ &trans  &trans  &bt BT_DISC 0   &trans  &trans  &trans                                     &trans  &trans  &trans  &rgb_ug RGB_TOG  &bt BT_DISC 0   &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &bt BT_CLR                                     &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &bt BT_DISC 0                                    &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans
                  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                                     &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
                                          &trans  &trans &kp CAPS        &kp LC(MINUS) &kp LC(LS(MINUS)) &trans
                                          &trans  &trans &trans        &trans &trans &trans
@@ -48,7 +50,7 @@
                                       &trans  &trans &trans       &trans  &trans &trans
             >;
         };
-
+// This map is currently unreachable. I am just putting key bindings I want to use in the future here.
         Keyboard_Control_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
