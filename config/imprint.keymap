@@ -96,6 +96,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
+        //I think this lets me access layer 4...?
         <&zip_temp_layer 4 2000>,
         // this gets it to the default installation orientation,
         <&zip_xy_scaler 1 2>;
@@ -105,8 +106,13 @@
 
 &trackball_central_listener {
     input-processors =
+
         // make this trackball output scrolling events by default instead of cursor movement,
         <&zip_xy_to_scroll_mapper>,
+
+        // invert the horizontal scroll (multiples the value by -1)
+        <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
+
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
-        <&zip_xy_scaler 1 3>;
+        <&zip_scroll_scaler 1 10>,;
 };
