@@ -114,5 +114,5 @@
         <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
 
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
-        <&zip_scroll_scaler 1 10>,;
+        <&zip_scroll_scaler 1 10>;
 };
