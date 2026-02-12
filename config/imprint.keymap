@@ -111,8 +111,8 @@
         <&zip_xy_to_scroll_mapper>,
 
         // invert the horizontal scroll (multiples the value by -1)
-        <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>,
 
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
-        <&zip_scroll_scaler 1 10>;
+        <&zip_scroll_scaler 1 13>;
 };
